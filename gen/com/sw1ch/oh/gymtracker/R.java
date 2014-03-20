@@ -953,17 +953,23 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
+        public static final int button1=0x7f040038;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
         public static final int normal=0x7f040001;
+        public static final int repsEdit=0x7f040035;
+        public static final int repsText=0x7f040034;
+        public static final int setsEdit=0x7f040032;
+        public static final int setsText=0x7f040033;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
         public static final int tabMode=0x7f040003;
-        public static final int textView1=0x7f040032;
         public static final int useLogo=0x7f040004;
+        public static final int weightsEdit=0x7f040036;
+        public static final int weightsText=0x7f040037;
         public static final int wrap_content=0x7f040000;
     }
     public static final class integer {
@@ -991,9 +997,10 @@ containing a value of this type.
         public static final int abs__search_dropdown_item_icons_2line=0x7f030012;
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
-        public static final int activity_main=0x7f030015;
-        public static final int sherlock_spinner_dropdown_item=0x7f030016;
-        public static final int sherlock_spinner_item=0x7f030017;
+        public static final int activity_detailed=0x7f030015;
+        public static final int activity_main=0x7f030016;
+        public static final int sherlock_spinner_dropdown_item=0x7f030017;
+        public static final int sherlock_spinner_item=0x7f030018;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1038,6 +1045,7 @@ containing a value of this type.
         public static final int action_settings=0x7f09000f;
         public static final int app_name=0x7f09000d;
         public static final int hello_world=0x7f09000e;
+        public static final int title_activity_detailed=0x7f090010;
     }
     public static final class style {
         public static final int Sherlock___TextAppearance_Small=0x7f0a0046;

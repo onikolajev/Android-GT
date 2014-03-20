@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <EditText
+        android:id="@+id/setsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/setsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/setsEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/repsText"
+        android:layout_alignTop="@+id/setsEdit"
+        android:gravity="center"
+        android:text="Сэты:" />
+
+    <EditText
+        android:id="@+id/repsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/setsEdit"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/weightsEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/repsEdit"
+        android:ems="10"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/repsText"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_above="@+id/weightsEdit"
+        android:layout_alignBottom="@id/repsEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@id/repsEdit"
+        android:layout_toLeftOf="@+id/repsEdit"
+        android:gravity="center"
+        android:text="Повторения:" />
+
+    <TextView
+        android:id="@+id/weightsText"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/weightsEdit"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/repsText"
+        android:layout_alignTop="@id/weightsEdit"
+        android:gravity="center"
+        android:text="Вес:" />
+
+</RelativeLayout>
