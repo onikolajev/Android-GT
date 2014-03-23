@@ -10,6 +10,11 @@ public class Set {
 		this.weights = (float) 0.0;
 	}
 
+	Set (int reps, float weights){
+		this.reps = reps;
+		this.weights = weights;
+	}
+	
 	Set(int id, int reps, float weights){
 		this.id = id;
 		this.reps = reps;

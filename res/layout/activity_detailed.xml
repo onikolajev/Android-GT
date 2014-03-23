@@ -4,33 +4,10 @@
     android:layout_height="match_parent" >
 
     <EditText
-        android:id="@+id/setsEdit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:ems="10"
-        android:inputType="number" />
-
-    <TextView
-        android:id="@+id/setsText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/setsEdit"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/repsText"
-        android:layout_alignTop="@+id/setsEdit"
-        android:gravity="center"
-        android:text="Сэты:"
-        android:textSize="@dimen/abs__action_bar_title_text_size" />
-
-    <EditText
         android:id="@+id/repsEdit"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
-        android:layout_below="@+id/setsEdit"
         android:ems="10"
         android:inputType="number" >
 
@@ -44,7 +21,7 @@
         android:layout_alignParentRight="true"
         android:layout_below="@+id/repsEdit"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="phone" />
 
     <TextView
         android:id="@+id/repsText"
@@ -72,11 +49,38 @@
         android:textSize="@dimen/abs__action_bar_title_text_size" />
 
     <Button
-        android:id="@+id/saveButton"
+        android:id="@+id/setsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:onClick="runSQL"
+        android:text="Sets" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/statusView"
+        android:layout_toRightOf="@+id/setsButton"
+        android:onClick="saveData"
         android:text="Save" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/saveButton"
+        android:onClick="goToStatistics"
+        android:text="Statistics" />
+
+    <TextView
+        android:id="@+id/statusView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:text="Set has been saved"
+        android:visibility="invisible" />
 
 </RelativeLayout>

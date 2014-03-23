@@ -26,6 +26,10 @@
             android:name="com.sw1ch.oh.gymtracker.DetailedActivity"
             android:label="@string/title_activity_detailed" >
         </activity>
+        <activity
+            android:name="com.sw1ch.oh.gymtracker.SetStatsActivity"
+            android:label="@string/title_activity_set_stats" >
+        </activity>
     </application>
 
 </manifest>

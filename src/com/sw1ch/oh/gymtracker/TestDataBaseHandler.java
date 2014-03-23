@@ -100,14 +100,34 @@ public class TestDataBaseHandler extends SQLiteOpenHelper {
 
 	// Getting contacts Count
 	public int getSetsCount() {
+		String countQuery = "SELECT  * FROM " + TABLE_SETS;
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor cursor = db.rawQuery(countQuery, null);
+		cursor.close();
+
+		// return count
+		return cursor.getCount();
 	}
 
 	// Updating single contact
 	public int updateSet(Set set) {
+		SQLiteDatabase db = this.getWritableDatabase();
+
+		ContentValues values = new ContentValues();
+		values.put(SETS_REPS, set.getReps());
+		values.put(SETS_WEIGHT, set.getWeights());
+
+		// updating row
+		return db.update(TABLE_SETS, values, SETS_ID + " = ?",
+				new String[] { String.valueOf(set.getID()) });
 	}
 
 	// Deleting single contact
 	public void deleteContact(Set set) {
+		SQLiteDatabase db = this.getWritableDatabase();
+	    db.delete(TABLE_SETS, SETS_ID + " = ?",
+	            new String[] { String.valueOf(set.getID()) });
+	    db.close();
 	}
 
 }
